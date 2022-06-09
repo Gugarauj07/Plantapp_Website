@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'produto',
     'pedido',
     'perfil',
+    'posts',
+    'comentarios',
+    'categorias',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -145,6 +148,8 @@ MESSAGE_TAGS = {
     constants.WARNING: 'alert-warning',
 }
 
+INSTALLED_APPS += ('django_summernote',)
+
 # Sessão em dias: 60s * 60m * 24h * 1d
 SESSION_COOKIE_AGE = 60 * 60 * 24 * 7
 
@@ -153,3 +158,9 @@ SESSION_SAVE_EVERY_REQUEST = False
 
 # Serializer - Padrão JSON
 # SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+SECURE_CONTENT_TYPE_NOSNIFF = False 
+SECURE_BROWSER_XSS_FILTER = False 
+SECURE_SSL_REDIRECT = False 
+SESSION_COOKIE_SECURE = False 
+CSRF_COOKIE_SECURE = False 
+X_FRAME_OPTIONS = 'DENY'
