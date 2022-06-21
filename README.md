@@ -1,6 +1,6 @@
 # Plantapp_Website
 
--This is a prototype of the website of a startup called "Plantapp"!
+-This is a prototype of the website for a startup called "Plantapp"!
 
 -Made with Django and Bootstrap.
 
