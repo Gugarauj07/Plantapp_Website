@@ -157,3 +157,6 @@ SESSION_SAVE_EVERY_REQUEST = False
 
 # Serializer - Padrão JSON
 # SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
+import django_on_heroku
+django_on_heroku.settings(locals())
